@@ -1,6 +1,8 @@
+/*
 package org.academiadecodigo.HackStreetBoys.TeamBrian;
 
 public class Movement {
+
 
     GameFrame.Grid grid;
 
@@ -32,6 +34,7 @@ public class Movement {
     }
 }
 
+*/
 /*  public enum GridDirection {
     UP,
     DOWN,
@@ -65,6 +68,8 @@ public class Movement {
 
         return opposite;
     }
+*//*
+
+
+
 */
-
-

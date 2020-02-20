@@ -23,6 +23,7 @@ public class GameFrame extends GridLayout {
         rectangle.fill();
 
         Grid grid = new Grid();
+        return grid;
     }
 
     public class Grid extends GridLayout {
@@ -47,4 +48,4 @@ public class GameFrame extends GridLayout {
         public void setRows (int number){
             super.setRows(number);}
     }
-    }
+}

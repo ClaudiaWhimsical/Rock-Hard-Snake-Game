@@ -1,8 +1,8 @@
 package org.academiadecodigo.HackStreetBoys.TeamBrian.Grid;
 
 
-import org.academiadecodigo.bootcamp.grid.GridColor;
-import org.academiadecodigo.bootcamp.grid.GridDirection;
+//import org.academiadecodigo.bootcamp.grid.GridDirection;
+
 
 /**
  * A position on the grid that is capable of moving around
@@ -36,26 +36,26 @@ public interface GridPosition {
      *
      * @return the position color
      */
-    public GridColor getColor();
+  /*  public GridColor getColor();
 
-    /**
+    *//**
      * Changes the color of this grid position
      *
      * @param color the new position
-     */
+     *//*
     public void setColor(GridColor color);
 
-    /**
+    *//**
      * Displays the position in the grid
-     */
+     *//*
     public void show();
 
-    /**
+    *//**
      * Hides the position in the grid
-     */
+     *//*
     public void hide();
 
-    /**
+    *//**
      * Moves this grid position towards a specified direction
      *
      * @param direction the direction to move to
