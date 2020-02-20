@@ -16,27 +16,9 @@ public class Snake {
     private Picture snakedemo;
 
     public void spawn() {
-        snakedemo = new Picture(90, 90, "resources/snakedemo.png");
+        snakedemo = new Picture(200, 90, "resources/snakedemo.png");
         snakedemo.grow(0, 20);
         snakedemo.draw();
-    }
-
-    public void moveRight(){
-        snakedemo.translate(10,0);
-        System.out.println("DIREITA!");
-    }
-
-    public void moveLeft(){
-        snakedemo.translate(-10,0);
-        System.out.println("ESQUERDA!");
-    }
-
-    public void moveUp(){
-        snakedemo.translate(0,-10);
-    }
-
-    public void moveDown(){
-        snakedemo.translate(0,10);
     }
 }
 

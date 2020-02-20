@@ -1,26 +1,50 @@
 package org.academiadecodigo.HackStreetBoys.TeamBrian;
 
+import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
-import javax.swing.*;
 
-public class GameFrame extends JPanel {
+import java.awt.*;
 
-    private int width, height;
-    private char[][] boardMatrix;
-    Rectangle rectangle;
-    /*
-    public Board(int width, int height) {
-        this.width = width;
-        this.height = height;
-        this.boardMatrix = new char[this.height][this.width];
+public class GameFrame extends GridLayout {
+    //TODO: Instantiate the rectangle and the grid in this class as they both work together in your game.
+
+    private int width = 600;
+    private int height = 600;
+    private Rectangle rectangle;
+    private int rows = 30;
+    private int cols = 30;
+    private int padding = 10;
+
+    public Object buildGameFrame() {
+
+        rectangle = new Rectangle(padding, padding, width, height);
+        rectangle.setColor(Color.WHITE);
+        rectangle.fill();
+
+        Grid grid = new Grid();
     }
-    */
-    public void build(){
-        rectangle = new Rectangle(10,10, 600,600);
-        rectangle.draw();
+
+    public class Grid extends GridLayout {
+
+        public GridLayout makeGrid() {
+            return new GridLayout(rows, cols, 0, 0);
+        }
+
+        @Override
+        public int getColumns() {
+            return super.getColumns();
+        }
+
+        public int getRows() {
+            return super.getRows();
+        }
+
+        public void setColumns(int number) {
+            super.setColumns(number);
+
+        }
+        public void setRows (int number){
+            super.setRows(number);}
     }
-
-
-
-}
+    }

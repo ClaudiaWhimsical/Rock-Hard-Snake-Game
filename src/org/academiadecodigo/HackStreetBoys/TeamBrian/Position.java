@@ -75,5 +75,5 @@ public class Position implements KeyboardHandler {
     public void setSnakedemo(Snake snakedemo) {
         this.snakedemo = snakedemo;
     }
-}
+
 
