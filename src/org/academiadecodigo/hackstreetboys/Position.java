@@ -1,5 +1,4 @@
-/*
-package org.academiadecodigo.HackStreetBoys.TeamBrian;
+package org.academiadecodigo.hackstreetboys;
 
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
@@ -15,6 +14,7 @@ public class Position implements KeyboardHandler {
         Keyboard keyboard = new Keyboard(this);
 
         //RIGHT//
+
         KeyboardEvent rightPressed = new KeyboardEvent();
         rightPressed.setKey(KeyboardEvent.KEY_RIGHT);
         rightPressed.setKeyboardEventType((KeyboardEventType.KEY_PRESSED));
@@ -22,13 +22,16 @@ public class Position implements KeyboardHandler {
         keyboard.addEventListener(rightPressed);
 
         //LEFT//
+
         KeyboardEvent leftPressed = new KeyboardEvent();
         leftPressed.setKey(KeyboardEvent.KEY_LEFT);
         leftPressed.setKeyboardEventType((KeyboardEventType.KEY_PRESSED));
 
         keyboard.addEventListener(leftPressed);
 
+
         //UP//
+
         KeyboardEvent upPressed = new KeyboardEvent();
         upPressed.setKey(KeyboardEvent.KEY_UP);
         upPressed.setKeyboardEventType((KeyboardEventType.KEY_PRESSED));
@@ -36,13 +39,16 @@ public class Position implements KeyboardHandler {
         keyboard.addEventListener(upPressed);
 
         //DOWN//
+
         KeyboardEvent downPressed = new KeyboardEvent();
         downPressed.setKey(KeyboardEvent.KEY_DOWN);
         downPressed.setKeyboardEventType((KeyboardEventType.KEY_PRESSED));
 
         keyboard.addEventListener(downPressed);
+
+
     }
-//TODO: Change to controls and delete the sout (eventually will be unneeded.
+
     @Override
     public void keyPressed(KeyboardEvent keyboardEvent) {
 
@@ -71,6 +77,7 @@ public class Position implements KeyboardHandler {
 
     @Override
     public void keyReleased(KeyboardEvent keyboardEvent) {
+
     }
 
     public void setSnakedemo(Snake snakedemo) {
@@ -78,4 +85,5 @@ public class Position implements KeyboardHandler {
     }
 
 
-*/
+
+}
