@@ -58,7 +58,7 @@ public class Controls implements KeyboardHandler {
 
         switch(keyboardEvent.getKey()){
             case KeyboardEvent.KEY_RIGHT:
-                snake.moveRight();
+                snake.setRight();
 
                 //snake1.moveRight();
                 //snake2.moveRight();
@@ -66,7 +66,7 @@ public class Controls implements KeyboardHandler {
                 break;
 
             case KeyboardEvent.KEY_LEFT:
-                snake.moveLeft();
+                snake.setLeft();
 
                 //snake1.moveLeft();
                 //snake2.moveLeft();
@@ -74,13 +74,13 @@ public class Controls implements KeyboardHandler {
                 break;
 
             case KeyboardEvent.KEY_UP:
-                snake.moveUp();
+                snake.setUp();
                 //snake1.moveUp();
                 //snake2.moveUp();
                 break;
 
             case KeyboardEvent.KEY_DOWN:
-                snake.moveDown();
+                snake.setDown();
                 //snake1.moveDown();
                 //snake2.moveDown();
                 break;

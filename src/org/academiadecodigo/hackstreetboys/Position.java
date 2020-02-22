@@ -54,22 +54,22 @@ public class Position implements KeyboardHandler {
 
         switch(keyboardEvent.getKey()){
             case KeyboardEvent.KEY_RIGHT:
-                snakedemo.moveRight();
+               // snakedemo.moveRight();
                 System.out.println("DIREITA!");
                 break;
 
             case KeyboardEvent.KEY_LEFT:
-                snakedemo.moveLeft();
+               // snakedemo.moveLeft();
                 System.out.println("ESQUERDA!");
                 break;
 
             case KeyboardEvent.KEY_UP:
-                snakedemo.moveUp();
+              //  snakedemo.moveUp();
                 System.out.println("CIMA!");
                 break;
 
             case KeyboardEvent.KEY_DOWN:
-                snakedemo.moveDown();
+               // snakedemo.moveDown();
                 System.out.println("BAIXO!");
                 break;
         }

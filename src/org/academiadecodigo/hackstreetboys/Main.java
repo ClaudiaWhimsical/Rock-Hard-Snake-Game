@@ -3,10 +3,11 @@ package org.academiadecodigo.hackstreetboys;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         GameFrame gameframe = new GameFrame();
 
         gameframe.build();
+        gameframe.createFruit();
 
         Snake snake = new Snake();
         //Snake snake1 = new Snake();
@@ -28,7 +29,10 @@ public class Main {
         //position.init();
 
 
-
+        while (snake.insideRectangle()){
+            snake.moveSnake();
+            Thread.sleep(100);
+        }
 
     }
 
